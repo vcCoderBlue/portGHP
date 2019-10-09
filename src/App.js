@@ -25,11 +25,11 @@ function App() {
               classNames="fade"
             >
               <Switch>
-                <Route path="/portGHP" component={Intro} exact />
-                <Route path="/Home" component={Home} />
-                <Route path="/About" component={About} />
-                <Route path="/PoP" component={PoP} />
-                <Route path="/Law" component={Law} />
+                <Route path="/portGHP/" component={Intro} exact />
+                <Route path="/portGHP/Home" component={Home} />
+                <Route path="/portGHP/About" component={About} />
+                <Route path="/portGHP/PoP" component={PoP} />
+                <Route path="/portGHP/Law" component={Law} />
                 <Route component={Error} />
               </Switch>
             </CSSTransition>
