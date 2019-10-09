@@ -1,0 +1,78 @@
+
+           @media screen and (min-width: 766px){
+             .nav{
+                  padding: 0;
+                  display: flex;
+                  /*float: right;*/
+                  background: white;
+              }
+
+              .navStyle{
+                list-style: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                /*font-family: helvetica;*/
+                color: black ;
+                position: fixed;
+                font-size: 20px; /*make this responsive?*/
+                text-transform: uppercase;
+                z-index: 5;
+                margin-left: 80%;
+              }
+
+              .navStyle::before{
+                content: '';
+                width: 0;
+                transition: .6s;
+                left: 0;
+                top: -5px;
+                position: absolute;
+                background:black ;
+                height: 3px;
+              }
+
+              .navStyle:hover::before{
+                transform: translateX(50%);
+                width: 50%;
+              }
+           }
+
+           @media screen and (max-width: 765px){
+             .nav{
+                  padding: 0;
+                  display: flex;
+                  /*float: right;*/
+                  background: white;
+              }
+
+              .navStyle{
+                list-style: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                font-family: helvetica;
+                color: black ;
+                position: fixed;
+                font-size: 20px; /*make this responsive?*/
+                text-transform: uppercase;
+                z-index: 5;
+                margin-left: 60%;
+              }
+
+              .navStyle::before{
+                content: '';
+                width: 0;
+                transition: .6s;
+                left: 0;
+                top: -5px;
+                position: absolute;
+                background:black ;
+                height: 3px;
+              }
+
+              .navStyle:hover::before{
+                transform: translateX(50%);
+                width: 50%;
+              }
+           }

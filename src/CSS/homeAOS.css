@@ -1,0 +1,288 @@
+/**/
+.content{
+    margin-top: 65px;
+    margin-bottom: 70px;
+}
+
+ #Cart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    /*margin-top: 100px;*/
+    grid-template-areas:
+        "main1 main1 main1"
+        "main2 main2 main2"
+        "main3 main3 main3"
+        "main4 main4 main4"
+        "main5 main5 main5"
+        "main6 main6 main7"
+        "main8 main8 main8"
+        "main9 main9 main9"
+        "footer1 footer2 footer2"
+        "footer3 footer3 footer3";
+}
+/* desktop grid */
+@media screen and (min-width: 766px){
+.content{
+    margin-top: 65px;
+    margin-bottom: 100px;
+}
+#Cart{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  max-width: 95%;
+  margin: 0 auto;
+        grid-template-areas:
+             "main1 main1 main2"
+                "main3 main4 main4"
+                "main5 main6 main7"
+                "main8 main8 main9"
+                "footer1 footer2 footer2"
+                "footer3 footer3 footer3";
+
+}
+
+.nested{
+               display: grid;
+               grid-template-columns: 30vw 30vw 30vw;
+               grid-gap: 1px;
+               grid-auto-rows: minmax(100px, auto);
+               max-width: 90vw;
+               text-align: center;
+           }
+           .nested p{
+                           /*border: 2px solid rgba(0,0,0);*/
+                           background: rgba(0,0,128);
+                           color: rgba(255,255,255);
+                           height: 200px;
+                           margin: 1px;
+                           /*transition-duration: 10000ms;
+                           transition-property: background-color;*/
+                       }
+                       .nested p:hover{
+                           background: rgba(248, 148, 6, 1);
+                           /*transform: rotate(45deg);*/
+                       }
+                       .grid{
+                                      display: grid;
+                                      grid-template-columns: 17vw 17vw 17vw;
+                                      grid-gap: 200px;
+                                      grid-auto-rows: minmax(100px, auto);
+                                      max-width: 90vw;
+                                      text-align: center;
+                                  }
+
+}
+#Cart > *{
+background: rgba(0,0,0,0.5);
+padding: 30px;
+}
+main1{
+    grid-area: main1;
+}
+main2{
+    grid-area: main2;
+}
+main3{
+    grid-area: main3;
+}
+main4{
+    grid-area: main4;
+    padding: 0 !important;
+}
+
+main5{
+    grid-area: main5;
+}
+main6{
+    grid-area: main6;
+}f
+main7{
+    grid-area: main7;
+}
+main8{
+    grid-area: main8;
+}
+main9{
+    grid-area: main9;
+}
+
+footer1{
+    grid-area: footer1;
+    color: yellow !important;
+    /*background: #333 !important;*/
+}
+footer2{
+    grid-area: footer2;
+    color: yellow !important;
+    /*background: #333 !important;*/
+}
+ footer3{
+    grid-area: footer3;
+    color: yellow !important;
+}
+
+.main2{
+                /*background: url('../brewsterImages/douSter1.jpg');*/
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+                /*height: 500px;*/
+            }
+            .main2:before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                /*background-color: rgba(0,0,0,0.9);*/
+                background-color: red;
+            }
+            .main2 .img-area{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               display: flex;
+            }
+            .main2 .img-area span{
+                width: 20%;
+                height: 100%;
+                /*background: url('../brewsterImages/douSter1.jpg');*/
+                background: blue;
+                transition: 0.5s;
+            }
+            .main2 .img-area span:nth-child(1){
+                background-position: 0;
+                transition-delay: 0;
+            }
+            .main2 .img-area span:nth-child(2){
+                background-position: 25%;
+                transition-delay: 0.1s;
+            }
+            .main2 .img-area span:nth-child(3){
+                background-position: 50%;
+                transition-delay: 0.2s;
+            }
+            .main2 .img-area span:nth-child(4){
+                background-position: 75%;
+                transition-delay: 0.3s;
+            }
+            .main2 .img-area span:nth-child(5){
+                background-position: 100%;
+                transition-delay: 0.4s;
+            }
+            .main2:hover .img-area>span{
+                transform: translateY(-100%);
+            }
+            .main2:hover .img-text{
+                transform: translateY(0);
+                transition: 1s;
+                transition-delay: 0.1s;
+            }
+            .img-text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: #fff;
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                transform: translateY(100%);
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .img-text h2{
+                margin: 5px 0;
+            }
+            .img-text h3{
+                margin: 5px 0;
+                font-size: 14px;
+            }
+/****/
+            .main21{
+                            /*background: url('../brewsterImages/douSter1.jpg');*/
+                            position: relative;
+                            overflow: hidden;
+                            box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+                            /*height: 500px;*/
+                        }
+                        .main21:before{
+                            content: '';
+                            position: absolute;
+                            width: 50%;
+                            height: 100%;
+                            top: 0;
+                            /*background-color: rgba(0,0,0,0.9);*/
+                            background-color: red;
+                        }
+                        .main21 .img-area1{
+                           position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 50%;
+                           height: 100%;
+                           display: flex;
+                        }
+                        .main21 .img-area1 span{
+                            width: 100%;
+                            height: 100%;
+                            /*background: url('../brewsterImages/douSter1.jpg');*/
+                            background: blue;
+                            transition: 0.5s;
+                        }
+                        .main2 .img-area span:nth-child(1){
+                            background-position: 0;
+                            transition-delay: 0;
+                        }
+                        .main2 .img-area span:nth-child(2){
+                            background-position: 25%;
+                            transition-delay: 0.1s;
+                        }
+                        .main2 .img-area span:nth-child(3){
+                            background-position: 50%;
+                            transition-delay: 0.2s;
+                        }
+                        .main2 .img-area span:nth-child(4){
+                            background-position: 75%;
+                            transition-delay: 0.3s;
+                        }
+                        .main2 .img-area span:nth-child(5){
+                            background-position: 100%;
+                            transition-delay: 0.4s;
+                        }
+                        .main21:hover .img-area1>span{
+                            transform: translateY(100%);
+                        }
+                        .main21:hover .img-text1{
+                            transform: translateY(0);
+                            transition: 1s;
+                            transition-delay: 0.1s;
+                        }
+                        .img-text1{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            color: #fff;
+                            padding: 20px;
+                            width: 50%;
+                            height: 100%;
+                            transform: translateY(100%);
+                            text-align: center;
+                            box-sizing: border-box;
+                        }
+                        .img-text1 h2{
+                            margin: 5px 0;
+                        }
+                        .img-text1 h3{
+                            margin: 5px 0;
+                            font-size: 14px;
+                        }

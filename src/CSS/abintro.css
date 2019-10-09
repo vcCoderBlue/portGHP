@@ -1,0 +1,134 @@
+  #Layer2{
+                  opacity: 0;
+                  animation: lineArt 13000ms;
+              }
+              @keyframes lineArt{
+                  0%{
+                      opacity: 1;
+                  }
+                  50%{
+                      opacity: 1;
+                  }
+                  100%{
+                      opacity: 0;
+                  }
+              }
+
+              #Layer5{
+                  opacity: 1;
+                  animation: logoA 16s;
+              }
+              @keyframes logoA{
+                  0%{
+                      opacity: 0;
+                  }
+                  80%{
+                      opacity: 0;
+                  }
+                  100%{
+                      opacity: 1;
+                  }
+              }
+
+              #hi1{
+                  opacity: 0;
+                  animation: textM 4s;
+              }
+              @keyframes textM{
+                   0%{
+                      opacity: 1;
+                  }
+                  50%{
+                      opacity:1;
+                  }
+                  100%{
+                      opacity: 0;
+                  }
+              }
+
+              @keyframes textMA{
+                   0%{
+                      opacity: 1;
+                  }
+                  50%{
+                      opacity:1;
+                  }
+                  80%{
+                      opacity: 1;
+                  }
+                  100%{
+                      opacity: 0;
+                  }
+              }
+
+              #iM{
+                  opacity: 0;
+                  animation: textM 4s;
+                  animation-delay: 1s;
+              }
+
+              #juS{
+                  opacity: 0;
+                  animation: textM 4s;
+                  animation-delay: 1500ms;
+              }
+
+              #cB{
+                  opacity: 0;
+                  animation: textMA 12000ms;
+                  animation-delay: 2000ms;
+              }
+
+              #yeR{
+                  opacity: 0;
+                  animation: textM 6s;
+                  animation-delay: 3000ms;
+              }
+
+              #seM{
+                  opacity: 0;
+                  animation: textM 6s;
+                  animation-delay: 4000ms;
+              }
+
+              #deS{
+                  opacity: 0;
+                  animation: textMA 9500ms;
+                  animation-delay: 4500ms;
+              }
+
+              #deV{
+                  opacity: 0;
+                  animation: textMA 9000ms;
+                  animation-delay: 5000ms;
+              }
+
+              #idN{
+                  opacity: 0;
+                  animation: textMA 8500ms;
+                  animation-delay: 5500ms;
+              }
+
+              #noR{
+                  opacity: 0;
+                  animation: textM 5000ms;
+                  animation-delay: 6500ms;
+              }
+
+              #simC{
+                  opacity: 0;
+                  animation: textM 3000ms;
+                  animation-delay: 8000ms;
+              }
+
+              #anD{
+                  opacity: 0;
+                  animation: textM 2500ms;
+                  animation-delay: 8500ms;
+              }
+
+              #simS{
+                  opacity: 0;
+                  animation: textMA 4000ms;
+                  animation-delay: 9000ms;
+              }

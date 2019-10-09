@@ -1,0 +1,78 @@
+
+           @media screen and (min-width: 766px){
+             .navBA{
+                  padding: 0;
+                  display: flex;
+                  /*float: right;*/
+                  background: black;
+              }
+
+              .navStyleBA{
+                list-style: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                /*font-family: helvetica;*/
+                color: white ;
+                position: fixed;
+                font-size: 20px; /*make this responsive?*/
+                text-transform: uppercase;
+                z-index: 5;
+                margin-left: 80%;
+              }
+
+              .navStyleBA::before{
+                content: '';
+                width: 0;
+                transition: .6s;
+                left: 0;
+                top: -5px;
+                position: absolute;
+                background:white ;
+                height: 3px;
+              }
+
+              .navStyleBA:hover::before{
+                transform: translateX(50%);
+                width: 50%;
+              }
+           }
+
+           @media screen and (max-width: 765px){
+             .navBA{
+                  padding: 0;
+                  display: flex;
+                  /*float: right;*/
+                  background: black;
+              }
+
+              .navStyleBA{
+                list-style: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: bold;
+                /*font-family: helvetica;*/
+                color: white;
+                position: fixed;
+                font-size: 20px; /*make this responsive?*/
+                text-transform: uppercase;
+                z-index: 5;
+                margin-left: 70%;
+              }
+
+              .navStyleBA::before{
+                content: '';
+                width: 0;
+                transition: .6s;
+                left: 0;
+                top: -5px;
+                position: absolute;
+                background:white;
+                height: 3px;
+              }
+
+              .navStyleBA:hover::before{
+                transform: translateX(50%);
+                width: 50%;
+              }
+           }

@@ -1,0 +1,191 @@
+.text0{
+                opacity:0;
+                animation: textS0 1500ms 1;
+                animation-delay: 2500ms;
+            }
+            .text1{
+                opacity:0;
+                animation: textS1 1500ms 1;
+                animation-delay: 3000ms;
+            }
+            .text2{
+                opacity:0;
+                animation: textS2 1500ms 1;
+                animation-delay: 3500ms;
+            }
+            .text3{
+                opacity:0;
+                animation: textS3 2500ms 1;
+                animation-delay: 5000ms;
+            }
+            .logo1{
+               fill: black;
+               opacity: 1;
+               animation: logoShow 1500ms 1;
+            }
+            .moon1{
+                animation: move2 1200ms 1;
+                animation-delay: 400ms;
+            }
+            .all{
+                background: ;
+                animation: yeahT 1200ms 1;
+                /*animation-delay: 1000ms;*/
+                cursor: pointer;
+            }
+            .this{
+                fill:#FFFFFF;
+                opacity: 1;
+                animation: there 1200ms 1;
+            }
+            .box{
+                transform-origin: ;
+                opacity: 0;
+                animation: fade 2200ms 1;
+                animation-delay: 1000ms;
+            }
+            .box1{
+                transform-origin: ;
+                opacity: 0;
+                animation: fade 3500ms 1;
+                animation-delay: 1000ms;
+            }
+             .box2{
+                transform-origin: ;
+                opacity: 0;
+                animation: fade 3000ms 1;
+                animation-delay: 1000ms;
+            }
+            .big{
+               opacity: ;
+               animation: clMove 1200ms 1;
+            }
+
+            @keyframes textS0{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity:1;
+                }
+                100%{
+                    opacity:0;
+                }
+            }
+             @keyframes textS1{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity:1;
+                }
+                100%{
+                    opacity:0;
+                }
+            }
+             @keyframes textS2{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity:1;
+                }
+                100%{
+                    opacity:0;
+                }
+            }
+             @keyframes textS3{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity:1;
+                }
+                100%{
+                    opacity:0;
+                }
+            }
+
+            @keyframes logoShow{
+                0%{
+                    opacity: 0;
+                }
+
+                90%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+
+            @keyframes clMove{
+                0%{
+                  transform-origin: 50px 50px;
+                }
+
+                50%{
+
+                }
+
+                100%{
+                   transform: scale(2, 2);
+                   transform-origin: 100px 50px;
+                }
+            }
+            @keyframes move2{
+                 0%{
+                  transform-origin: 70% 0%;
+                 }
+                 99%{
+
+                 }
+                 100%{
+                   transform: scale(27,27);
+                   transform-origin: 72% 3%;
+                 }
+             }
+
+             @keyframes yeahT{
+                 0%{
+
+                 }
+                 98%{
+                     background: black;
+
+                 }
+                 100%{
+                     background: yellow;
+                 }
+            }
+
+            @keyframes there{
+                 0%{
+                  opacity:0.01;
+                 }
+                 99%{
+                  opacity:0.01;
+                 }
+                 100%{
+                   opacity:1;
+                 }
+             }
+
+            @keyframes fade{
+                0%{
+                  opacity:1;
+                 }
+                 20%{
+                   transform: translate(0px, 0px);
+                 }
+                45%{
+                    opacity:;
+                }
+                55%{
+                    opacity:;
+                }
+                 100%{
+                   opacity:.75;
+                   transform: translate(0px, 500px);
+                 }
+            }

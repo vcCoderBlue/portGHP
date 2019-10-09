@@ -1,0 +1,363 @@
+.sunMoon{
+    /*margin-top: 100px;*/
+    cursor: pointer;
+  }
+
+  .logo{
+    fill: ;
+    animation: logoGo 15s infinite;
+  }
+
+  .cometMini{
+      fill:;
+      opacity: 0;
+      animation: goCometM 15s ease-in infinite;
+      animation-delay: 5s;
+  }
+  .comet{
+      fill:;
+      opacity: 0;
+      animation: goComet 15s infinite;
+      animation-delay: 5s;
+  }
+  .star1{
+      /*fill: url(#myStar) pink; */
+      fill: white;
+      opacity: 0;
+      animation: flashStar1 15s infinite;
+      animation-delay: 5s;
+  }
+  .star2{
+      /*fill: url(#myStar) pink; */
+      fill: white;
+      opacity: 0;
+      animation: flashStar2 15s infinite;
+      animation-delay: 5s;
+  }
+  .star3{
+      /*fill: url(#myStar) pink; */
+      fill: white;
+      opacity: 0;
+      animation: flashStar3 15s infinite;
+      animation-delay: 5s;
+  }
+  .air{
+     fill: orange;
+     animation: changeColor 15s infinite;
+  }
+  .water{
+     fill: blue;
+     animation: changeWater 15s infinite;
+  }
+  .moon{
+     fill:;
+     animation: nightLight 15s infinite;
+  }
+  .sun{
+     fill:;
+     animation: sunMove 15s ease-in infinite;
+  }
+  .sunH{
+     fill:;
+     opacity: ;
+     animation: halfSun 15s infinite;
+  }
+  .cloud1{
+     fill: ;
+     opacity: .5;
+     animation: cloudMove 15s infinite;
+  }
+  .cloud2{
+     fill: ;
+     opacity: .5;
+     animation: cloudMove 15s infinite;
+  }
+  .cloud3{
+     fill: ;
+     opacity: .5;
+     animation: cloudMove 15s infinite;
+  }
+
+  @keyframes logoGo {
+      0%{
+          transform: translate(0, 0);
+      }
+      17%{
+          transform: translate(0, 2px);
+      }
+      37%{
+          transform: translate(0, 0);
+      }
+      57%{
+          transform: translate(0,2px);
+      }
+      77%{
+          transform: translate(0, 0);
+      }
+      90%{
+          transform: translate(0, 2px);
+      }
+      100%{
+          transform: translate(0, 0);
+      }
+  }
+
+  @keyframes goComet{
+      0%{
+         opacity:0;
+      }
+      35%{
+          opacity:0;
+          transform: translate(-25%, 0%);
+      }
+      50%{
+          opacity:1;
+          transform: translate(110%, -25%);
+      }
+      55%{
+
+      }
+      60%{
+          opacity:0;
+      }
+  }
+
+  @keyframes goCometM{
+      0%{
+         opacity:0;
+      }
+      35%{
+
+      }
+      50%{
+          opacity:1;
+      }
+      55%{
+         transform: translate(-110%, -20%);
+      }
+      60%{
+          opacity:0;
+      }
+  }
+
+  @keyframes changeWater{
+    0%{
+      fill: blue;
+    }
+    10%{
+      fill: blue;
+    }
+    15%{
+      fill: blue;
+    }
+    20%{
+      fill: blue;
+    }
+    25%{
+      fill: blue;
+    }
+    30%{
+      fill: blue;
+    }
+    35%{
+      fill: blue;
+    }
+    40%{
+      fill: royalblue;
+    }
+    45%{
+      fill: royalblue;
+    }
+    70%{
+      fill: royalblue;
+    }
+    100%{
+      fill: navy;
+    }  
+  }
+  @keyframes halfSun{
+      0%{
+          opacity: .50;
+          /*transform: scale(.5);
+          transform-origin: 340px 390px;*/
+      }
+      3%{
+          opacity: 0;
+      }
+      4%{
+          opacity: 0;
+      }
+      84%{
+          opacity:0;
+      }
+      95%{
+          opacity:.25
+      }
+
+      100%{
+          opacity: .50;
+      }
+
+  }
+
+  @keyframes sunMove{
+      0%{
+         opacity: 0;
+      }
+      8%{
+          opacity: 1;
+      }
+      /*12%{
+       transform: translate(-5%, -20%);
+      }*/
+      18%{
+       transform: translate(-10%, -20%);
+      }
+      /*24%{
+       transform: translate(-30%, -20%);
+      }
+      30%{
+       transform: translate(-40%, -20%);
+      }
+      37%{
+       transform: translate(-73.5%, -3%);
+      }*/
+      50%{
+       transform: translate(-153%, 25%);
+      }
+      55%{
+       transform: translate(-120%, 25%);
+      }
+      56%{
+          opacity: 1;
+      }
+      57%{
+          opacity: 0;
+      }
+      75%{
+       opacity: 0;
+       transform: translate(0, 0);
+      }
+      90%{
+       opacity: 0;
+       transform: translate(0, 0);
+      }
+      100%{
+        opacity: 0;
+      }
+  }
+
+  @keyframes changeColor{
+      0%{
+         fill: url(#mySunrise) lightblue;
+      }
+      6%{
+          fill: url(#mySunrise) lightblue;
+      }
+      15%{
+          fill: lightblue;
+      }
+      29%{
+          fill: lightblue;
+      }
+      35%{
+          fill: url(#mySunset) purple;
+      }
+      37%{
+          fill: url(#mySunset) purple;
+      }
+      38%{
+          fill: url(#mySunset) purple;
+      }
+      39%{
+          fill: purple;
+      }
+      51%{
+          fill: navy;
+      }
+      75%{
+          fill: navy;
+      }
+      85%{
+          fill: black;
+      }
+      95%{
+          fill:purple;
+      }
+      100%{
+          fill: orange;
+      }
+  }
+
+   @keyframes nightLight{
+      0%{
+          opacity: .05;
+      }
+      25%{
+          opacity: .15;
+      }
+       37%{
+           opacity: .25;
+       }
+      50%{
+          opacity: .75;
+      }
+      75%{
+          opacity: 1;
+      }
+      85%{
+          opacity: 1;
+      }
+      100%{
+          opacity: .25;
+      }
+  }
+
+   @keyframes cloudMove{
+      0%{
+
+      }
+      /*12%{
+          transform: translate(-5%, 0);
+      }
+      25%{
+          transform: translate(-10%, 0);
+      }
+      37%{
+          transform: translate(-15%, 0);
+      }
+      40%{
+          transform: translate(-15%, 0);
+      }*/
+      50%{
+          transform: translate(-15%, 0);
+      }
+      63%{
+          opacity: 0;
+      }
+      75%{
+          transform: translate(10%,0);
+          opacity: 0;
+      }
+      /*87%{
+         transform: translate(5%,0);
+      }
+      100%{
+         transform: translate(5%,0);
+      }*/
+  }
+  @keyframes flashStar1{
+
+      40%{opacity: 1;}
+      50%{opacity: 0;}
+  }
+  @keyframes flashStar2{
+
+      35%{opacity: 1;}
+      52%{opacity: 0;}
+  }
+  @keyframes flashStar3{
+
+      45%{opacity: 1;}
+      48%{opacity: 0;}
+  }
